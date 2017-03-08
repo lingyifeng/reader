@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_collect"
+            android:layout_weight="1"
+            android:text="添加书签"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/bt_choose"
+        android:text="字体大小"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/bt_change"
+            android:layout_weight="1"
+            android:text="进度跳转"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.zxzq.pocket_reader.view.MyPageWidget
+        android:id="@+id/pager"
+        android:layout_below="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="请选择要浏览的文件"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/bt_collection"
+        android:text="书签"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View
+        android:layout_below="@+id/rl_bar"
+        android:background="#999999"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <FrameLayout
+        android:layout_below="@+id/rl_bar"
+        android:id="@+id/fm_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
